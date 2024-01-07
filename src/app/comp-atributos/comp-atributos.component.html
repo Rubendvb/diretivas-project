@@ -1,0 +1,14 @@
+<p [ngClass]="estilo">comp-atributos works!</p>
+<button (click)="trocar()">Change</button>
+
+<h1>Lista de compras</h1>
+<p>Adicione um item</p>
+<input type="text" [(ngModel)]="item" />
+<button (click)="adicionar()">Adicionar</button>
+
+<p>{{ item }}</p>
+<ul>
+  <li *ngFor="let p of lista">{{ p }}</li>
+</ul>
+
+<hr />
