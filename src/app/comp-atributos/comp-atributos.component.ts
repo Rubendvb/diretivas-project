@@ -23,6 +23,12 @@ export class CompAtributosComponent {
   }
 
   adicionar() {
+    if (this.item === '') {
+      return;
+    }
+
     this.lista.push(this.item);
+
+    this.item = '';
   }
 }
